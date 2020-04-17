@@ -20,8 +20,17 @@ public class MaximumAnalyser
         else
             return third;
     }
+    //Method for finding maximum from three strings
+    public String findMaximumString(String string1,String string2,String string3)
+    {
+        if (string1.compareTo(string2) > 0 && string1.compareTo(string3) > 0)
+            return string1;
+        else if (string2.compareTo(string1) > 0 && string2.compareTo(string3) > 0)
+            return string2;
+        else
+            return string3;
+    }
     public static void main(String args[])
-
     {
         System.out.println("Welcome to maximum analyser problems");
     }
