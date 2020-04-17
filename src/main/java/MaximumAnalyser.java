@@ -1,7 +1,21 @@
-public class MaximumAnalyser
+public class MaximumAnalyser < T extends Comparable <T>>
 {
-    //Method for finding maximum from three integer numbers
-    public Integer findMaximum(Integer first, Integer second, Integer third)
+    private T first;
+    private T second;
+    private T third;
+
+    public MaximumAnalyser()
+    {
+
+    }
+    public MaximumAnalyser(T first, T second, T third)
+    {
+        this.first = first;
+        this.second = second;
+        this.third = third;
+    }
+    //Generic Method for finding maximum from three elements
+    public T findMaximum(T first, T second, T third)
     {
         if (first.compareTo(second) > 0 && first.compareTo(third) > 0)
             return first;
@@ -10,25 +24,9 @@ public class MaximumAnalyser
         else
             return third;
     }
-    //Method for finding maximum from three float numbers
-    public Float findMaximum(Float first, Float second, Float third)
+    public <T extends Comparable<T>> T findMaximum()
     {
-        if (first.compareTo(second) > 0 && first.compareTo(third) > 0)
-            return first;
-        else if (second.compareTo(first) > 0 && second.compareTo(third) > 0)
-            return second;
-        else
-            return third;
-    }
-    //Method for finding maximum from three strings
-    public String findMaximumString(String string1,String string2,String string3)
-    {
-        if (string1.compareTo(string2) > 0 && string1.compareTo(string3) > 0)
-            return string1;
-        else if (string2.compareTo(string1) > 0 && string2.compareTo(string3) > 0)
-            return string2;
-        else
-            return string3;
+        return (T) findMaximum(first,second,third);
     }
     public static void main(String args[])
     {
