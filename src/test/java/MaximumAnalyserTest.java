@@ -66,42 +66,42 @@ public class MaximumAnalyserTest
     {
         MaximumAnalyser<Integer> maximumAnalyser = new MaximumAnalyser<>(98, 66, 46);
         Integer maximum = (Integer) maximumAnalyser.findMaximum();
-        Assert.assertEquals((Integer)98 , maximum);
+        Assert.assertEquals((Integer) 98 , maximum);
     }
     @Test
     public void givenThreeIntegers_FindMaximum_AtSecondPosition_FromGenericClass()
     {
         MaximumAnalyser<Integer> maximumAnalyser = new MaximumAnalyser<>(66, 98, 46);
         Integer maximum = (Integer) maximumAnalyser.findMaximum();
-        Assert.assertEquals((Integer)98 , maximum);
+        Assert.assertEquals((Integer) 98 , maximum);
     }
     @Test
     public void givenThreeIntegers_FindMaximum_AtThirdPosition_FromGenericClass()
     {
         MaximumAnalyser<Integer> maximumAnalyser = new MaximumAnalyser<>(46, 66, 98);
         Integer maximum = (Integer) maximumAnalyser.findMaximum();
-        Assert.assertEquals((Integer)98 , maximum);
+        Assert.assertEquals((Integer) 98 , maximum);
     }
     @Test
     public void givenThreeFloatNumbers_FindMaximum_AtFirstPosition_FromGenericClass()
     {
         MaximumAnalyser<Float> maximumAnalyser = new MaximumAnalyser<>(6.3f,5.6f,2.3f);
         Float maximum = (Float) maximumAnalyser.findMaximum();
-        Assert.assertEquals((Float)6.3f , maximum);
+        Assert.assertEquals((Float) 6.3f , maximum);
     }
     @Test
     public void givenThreeFloatNumbers_FindMaximum_AtSecondPosition_FromGenericClass()
     {
         MaximumAnalyser<Float> maximumAnalyser = new MaximumAnalyser<>(5.6f,6.3f,2.3f);
         Float maximum = (Float) maximumAnalyser.findMaximum();
-        Assert.assertEquals((Float)6.3f , maximum);
+        Assert.assertEquals((Float) 6.3f , maximum);
     }
     @Test
     public void givenThreeFloatNumbers_FindMaximum_AtThirdPosition_FromGenericClass()
     {
         MaximumAnalyser<Float> maximumAnalyser = new MaximumAnalyser<>(2.3f,5.6f,6.3f);
         Float maximum = (Float) maximumAnalyser.findMaximum();
-        Assert.assertEquals((Float)6.3f , maximum);
+        Assert.assertEquals((Float) 6.3f , maximum);
     }
     @Test
     public void givenThreeStrings_FindMaximum_AtFirstPosition_FromGenericClass()

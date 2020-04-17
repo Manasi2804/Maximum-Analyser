@@ -36,4 +36,9 @@ public class MaximumAnalyser < T extends Comparable <T>>
     {
         System.out.println("Maximum is :"+maximum);
     }
+    public static void main(String args[])
+    {
+        System.out.println("Welcome to maximum analyser problems");
+    }
+
 }
