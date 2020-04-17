@@ -8,7 +8,7 @@ public class MaximumAnalyserTest
     @Test
     public void givenThreeIntegers_FindMaximum_AtFirstPosition_FromGenericMethod()
     {
-        Comparable maximum = (Integer) maximumAnalyser.findMaximum(98, 66, 46);
+        Integer maximum = (Integer) maximumAnalyser.findMaximum(98, 66, 46);
         Assert.assertEquals((Integer)98 , maximum);
     }
     @Test
